@@ -13,4 +13,9 @@ public class Teacher extends Person {
     public void setDegree(String degree) {
         this.degree = degree;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " | " + degree;
+    }
 }

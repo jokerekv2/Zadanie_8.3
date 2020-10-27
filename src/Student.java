@@ -13,4 +13,9 @@ public class Student extends Person {
     public void setIndex(int index) {
         this.index = index;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " | " + index;
+    }
 }
