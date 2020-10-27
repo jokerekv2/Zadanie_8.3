@@ -1,5 +1,8 @@
 public class Student extends Person {
     private int index;
+    private final static int MAX_NUMBER_OF_MARKS = 10;
+    private int[] mark = new int[MAX_NUMBER_OF_MARKS];
+
 
     public Student(String name, String surname, int index) {
         super(name, surname);
@@ -12,6 +15,14 @@ public class Student extends Person {
 
     public void setIndex(int index) {
         this.index = index;
+    }
+
+    public int[] getMark() {
+        return mark;
+    }
+
+    public void setMark(int[] mark) {
+        this.mark = mark;
     }
 
     @Override

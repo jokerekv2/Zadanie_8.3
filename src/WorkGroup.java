@@ -1,14 +1,23 @@
+import java.util.Scanner;
+
 public class WorkGroup {
     private Teacher teacher;
     private Student[] students;
     private int size;
 
+    private Scanner sc = new Scanner(System.in);
+    private Register register = new Register();
     private GroupManagement groupManagement = new GroupManagement();
 
     public WorkGroup(Teacher teacher, Student[] students) {
         this.teacher = teacher;
         this.students = students;
         size = students.length;
+    }
+
+    public void addMarkToStudent(){
+
+        students[register.whatStudent()] = register.addMark(size);
     }
 
     public void addStudentsToGroup() {
